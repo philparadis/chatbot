@@ -6,14 +6,14 @@ struct nlist { /* table entry: */
     char *name; /* defined name */
     char *defn; /* replacement text */
 };
+typedef struct nlist nlist;
 
 struct hashtable {
     int size;
-    unsigned int **data;
+    nlist** data;
 };
-
-typedef struct nlist nlist;
 typedef struct hashtable hashtable;
+
 
 hashtable *create_hashtable(int expected_size);
 void destroy_hashtable(hashtable *ht);

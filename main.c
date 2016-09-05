@@ -64,32 +64,6 @@ int get_time(void);
 
 //-------------------------------------------------------
 
-void test_hashtable()
-{
-  hashtable *mydict;
-
-  printf("Creating hash table...\n");
-  mydict = create_hashtable(0);
-  if (mydict) {
-    printf("Success!\n");
-  } else {
-    printf("Failure! Not enough memory!\n");
-    exit(-1);
-  }
-
-  printf("New hash table of size: %d.\n", mydict->size);
-
-  printf("Inserting some words, then printing hash table...");
-  write(ht, "")
-
-  printf("Destroying hash table...\n");
-  destroy_hashtable(mydict);
-
-  printf("Testing hash table.");
-  exit(0);
-
-}
-
 int main(int argc, char *argv[]){
 
   char out[MAX_WORDS][MAX_LETTERS];

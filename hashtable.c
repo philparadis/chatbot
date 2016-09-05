@@ -26,10 +26,10 @@ hashtable *create_hashtable(int expected_size)
     else
         ht->size = expected_size;
 
-    ht->data = malloc(ht->size*sizeof(unsigned int*));
+    ht->data = malloc(ht->size*sizeof(nlist*));
     if (ht->data == NULL)
         return NULL;
-    memset(ht->data, ht->size*sizeof(unsigned int*), NULL);
+    memset(ht->data, ht->size*sizeof(nlist*), NULL);
     return ht;
 }
 
